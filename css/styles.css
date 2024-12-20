@@ -1,9 +1,11 @@
+/* Estilo global */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
     color: #333;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 header {
@@ -39,49 +41,70 @@ header nav ul li a:hover {
     background-color: #4CAF50;
 }
 
-.container {
+/* Contenedor principal */
+.welcome-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
     color: #333;
+    margin-bottom: 20px;
 }
 
+.description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.main-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+    width: 100%;
+    max-width: 250px;
+}
+
+.main-button:hover {
+    background-color: #45a049;
+    transform: translateY(-5px);
+}
+
+.main-button:active {
+    transform: translateY(2px);
+}
+
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 1rem 0;
-    margin-top: 20px;
-}
-/* Estilo básico para el navbar */
-.navbar {
-    background-color: #333;
-    overflow: hidden;
+    margin-top: 40px;
 }
 
-.navbar-menu {
-    list-style-type: none;
+footer p {
     margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.navbar-menu li {
-    display: inline-block;
-}
-
-.navbar-menu li a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    display: block;
-}
-
-.navbar-menu li a:hover {
-    background-color: #575757;
+    font-size: 1rem;
 }

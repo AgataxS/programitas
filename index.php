@@ -3,7 +3,7 @@
 
 <div class="welcome-container">
     <h1>Bienvenido al Sistema de Gestión</h1>
-    <p>Administra los programas, categorías, notas, usuarios, conductores y horarios de manera sencilla y eficiente.</p>
+    <p class="description">Administra los programas, categorías, notas, usuarios, conductores y horarios de manera sencilla y eficiente.</p>
     <div class="menu-container">
         <a href="crud/programas.php" class="main-button">Gestionar Programas</a>
         <a href="crud/categorias.php" class="main-button">Gestionar Categorías</a>
@@ -15,4 +15,4 @@
     </div>
 </div>
 
-<?php include('includes/footer.php'); ?>
+
