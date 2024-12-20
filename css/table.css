@@ -1,30 +1,30 @@
-/* Estilos para las tablas */
-.program-list {
-    margin: 2rem auto;
-    max-width: 1000px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 th, td {
-    padding: 12px;
+    padding: 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
 
 th {
-    background-color: #333;
+    background-color: #4CAF50;
     color: white;
+    font-size: 16px;
 }
 
 tr:hover {
     background-color: #f4f4f4;
+}
+
+td img {
+    max-width: 50px;
+    border-radius: 5px;
 }
